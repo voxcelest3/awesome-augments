@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import { Reveal, SectionTitle } from "./Reveal";
+import work1 from "@/assets/work-1.jpg";
+import work2 from "@/assets/work-2.jpg";
 
 const shots = [
   { src: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80", alt: "Modern fade haircut style" },
   { src: "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=80", alt: "Professional barber haircut service" },
   { src: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80", alt: "Classic men's hairstyle" },
-  { src: "https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=800&q=80", alt: "Clean skin fade haircut" },
-  { src: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80", alt: "Barbershop grooming service" },
+  { src: work1, alt: "Client with a fresh sharp skin fade haircut" },
+  { src: work2, alt: "Barber blending a clean taper fade with clippers" },
   { src: "https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=800&q=80", alt: "Premium men's haircut design" },
 ];
+
 
 export function Gallery() {
   const [open, setOpen] = useState<null | { src: string; alt: string }>(null);
